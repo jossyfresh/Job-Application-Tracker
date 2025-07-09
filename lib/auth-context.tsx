@@ -57,7 +57,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     })
 
     return () => subscription.unsubscribe()
-  }, [])
+  }, [supabase, setUser, setProfile, setLoading, setLoading])
 
   const fetchProfile = async (userId: string) => {
     try {
@@ -133,6 +133,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
 export function useAuth() {
   const context = useContext(AuthContext)
+  console.log("useAuth context:", context)
   if (context === undefined) {
     throw new Error("useAuth must be used within an AuthProvider")
   }
