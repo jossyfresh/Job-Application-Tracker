@@ -23,25 +23,6 @@ npm install
 yarn install
 # or
 pnpm install
-\`\`\`
-
-### 2. Environment Variables Setup
-
-Your `.env.local` file is already configured with your Supabase credentials:
-
-\`\`\`env
-NEXT_PUBLIC_SUPABASE_URL=https://uzhtumuzysycntyiahnm.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6aHR1bXV6eXN5Y250eWlhaG5tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIwMDQ0NjUsImV4cCI6MjA2NzU4MDQ2NX0.UoeWWPqEY2Pd4JlBXrelGOOZb3PX9LCO6O1viUAlEuw
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-\`\`\`
-
-**✅ This file is ready to use - no changes needed!**
-
-### 3. Supabase Database Setup
-
-1. **Go to your Supabase Dashboard**: https://supabase.com/dashboard/project/uzhtumuzysycntyiahnm
-
-2. **Navigate to SQL Editor**: Click on "SQL Editor" in the left sidebar
 
 3. **Run the Database Script**: Copy and paste the entire content from `scripts/create-tables.sql` and click "Run"
 
